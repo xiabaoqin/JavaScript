@@ -295,19 +295,106 @@ obj.newProp = "Test";
 console.log(obj); 
 ```
 
-## 4. 使用箭头函数编写简洁的匿名函数
+## 3.  布尔值、运算符、日期
 
-```javascript
-const myFunc = function() {
-  const myVar = "value";
-  return myVar;
-}
+### 3.1 布尔值
 
-const myFunc = () => {
-  const myVar = "value";
-  return myVar;
-}
+#### 1. 真值
 
-const myFunc = () => "value";
+- 除零外，所有数字（正数和负数）都是真实的
+- 除空字符串 ('') 外，所有字符串都是真实的
+- 布尔值真
+
+#### 2. 虚假值
+
+- 0
+- 0n
+- 无效的
+- 不明确的
+- 钠盐
+- 布尔值 false
+- '', "", ``, 空字符串
+
+### 3.2 Undefined
+
+```
+let empty = null
+console.log(empty)
 ```
 
+
+
+### 3.3 Null
+
+### 3.4 运算符
+
+#### 1. 赋值运算符
+
+#### 2. 算数运算符
+
+#### 3.  比较运算符
+
+#### 4. 逻辑运算符
+
+#### 5. 增量运算符
+
+#### 6. 减量运算符
+
+#### 7. 三元运算符
+
+#### 8. 运算符优先级
+
+### 3.5 窗口方法
+
+#### 1. 窗口alert()方法
+
+```javascript
+//正如您在最开始看到的那样，alert() 方法显示一个带有指定消息和一个 OK 按钮的警告框。它是一个内置方法，它接受参数。
+alert(message)
+alert('Welcome to 30DaysOfJavaScript')
+```
+
+
+
+#### 2. 窗口prompt()方法
+
+```javascript
+//窗口提示方法在浏览器上显示一个带有输入的提示框以获取输入值，输入数据可以存储在变量中。prompt() 方法有两个参数。第二个参数是可选的
+prompt('required text', 'optional text')
+let number = prompt('Enter number', 'number goes here')
+console.log(number)
+```
+
+
+
+#### 3. 窗口confirm()方法
+
+```javascript
+//confirm() 方法显示一个带有指定消息的对话框，以及一个 OK 和一个 Cancel 按钮。确认框通常用于请求用户允许执行某些操作。Window confirm() 接受一个字符串作为参数。单击“确定”会产生真值，而单击“取消”按钮会产生假值。
+const agree = confirm('Are you sure you like to delete? ')
+console.log(agree) // result will be true or false based on what you click on the dialog box
+
+//这些不是所有的窗口方法，我们将有一个单独的部分来深入研究窗口方法。
+```
+
+
+
+### 3.6 日期对象
+
+#### 1. 创建时间对象
+
+#### 2. 整整一年
+
+#### 3. 获取月份
+
+#### 4. 约会
+
+#### 5. 得到一天
+
+#### 6. 获取时间
+
+#### 7. 获得会议记录
+
+#### 8. 获得秒数
+
+#### 9. 争取时间
